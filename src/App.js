@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Physics problem solver</h1>
+      <p>In this app, you are going to solve your school physics problems!!</p>
+      <p> Please, use it only to check your solutions, if you want to learn you should try to solve the problems yourself before using this!</p>
     </div>
   );
 }
