@@ -1,9 +1,11 @@
+import'../styles/Home.css'
+import {lenguaje} from './NavBar'
 let Home = () => {
   return (
     <>
-      <h1> Physics problem solver</h1>
-      <p>In this app, you are going to solve your school physics problems!!</p>
-      <p> Please, use it only to check your solutions, if you want to learn you should try to solve the problems yourself before using this!</p>
+      <h1>{lenguaje.homeh1} <span>{lenguaje.homespan}</span></h1> 
+      <p>{lenguaje.homeparrafo1}</p>
+      <p> {lenguaje.homeparrafo2}</p>
     </>
   )
 }
