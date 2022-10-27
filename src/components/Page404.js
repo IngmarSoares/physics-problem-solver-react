@@ -1,9 +1,10 @@
+import { lenguaje } from "./NavBar"
 
 function Page404() {
   return(
     <div>
-      <h1>Page  Not Found</h1>
-      <h3>This URL is not correct</h3>
+      <h1>{lenguaje.page404h1}</h1>
+      <h2>{lenguaje.page404h2}</h2>
     </div>
   )
 }
