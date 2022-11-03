@@ -10,9 +10,9 @@ function Mru (){
 
   const [selectedUnitsOption, setSelectedUnitsOption] = useState([' m/s',' m',' s'])
   function changeUnits (event){
-    if (event.target.value == 'ms') {setSelectedUnitsOption([' m/s',' m',' s'])}
-    if (event.target.value == 'kmh') {setSelectedUnitsOption([' km/h',' km',' h'])}
-    if (event.target.value == 'mph') {setSelectedUnitsOption([' mi/h',' mi',' h'])}
+    if (event.target.value === 'ms') {setSelectedUnitsOption([' m/s',' m',' s'])}
+    if (event.target.value === 'kmh') {setSelectedUnitsOption([' km/h',' km',' h'])}
+    if (event.target.value === 'mph') {setSelectedUnitsOption([' mi/h',' mi',' h'])}
   }
 
   const [problemType, setProblemType] = useState([0,1,1,1,1])
@@ -33,6 +33,7 @@ function Mru (){
       case 'findS':
           setProblemType([1,1,1,1,0])
         break;
+      default: setProblemType([1,1,1,1,1])
     }
   }
 
@@ -64,6 +65,7 @@ function Mru (){
       case 'findS':
         setResult(lenguaje.mruresults + (Number(eseo) + Number(uveo)*(Number(te) - Number(teo))) + selectedUnitsOption[1])
         break;
+      default: setResult('')
     }
 
   }
