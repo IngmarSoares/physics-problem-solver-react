@@ -1,0 +1,32 @@
+
+
+.formula {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center ;
+}
+
+.form-image {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 80px;
+  width: auto;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+.var-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+var-list li {
+  padding-left: 0;
+}

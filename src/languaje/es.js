@@ -1,5 +1,5 @@
 export const langES = {
-  navhome: 'Inicia',
+  navhome: 'Inicio',
   navabout: 'Sobre mi',
   navcontact: 'Contacto',
   navkinematics: 'Cinematica',
@@ -17,4 +17,36 @@ export const langES = {
   abouth2: 'Mi nombre es Ingmar!!',
   page404h1: 'Pagina no encontrada',
   page404h2: 'Esta direccion URL no es correcta.',
+  mruh1: 'Movimiento Rectilineo uniforme',
+  mruh41: 'El movimiento rectilíneo uniforme (m.r.u.), es aquel con velocidad constante y cuya trayectoria es una línea recta. Un ejemplo claro son las puertas correderas de un ascensor, generalmente se abren y cierran en línea recta y siempre a la misma velocidad. A continuacion se muestra formula general y las incognitas que encontramos:',
+  mruli1: 'So : Posicion inicial',
+  mruli2: 'S : Posicion transcurrido un tiempo T',
+  mruli3: 'to : Instante inicial',
+  mruli4: 't : Tiempo transcurrido',
+  mruli5: 'Vo : Velocidad inicial (constante)',
+  mruh42: 'Observa que cuando afirmamos que la velocidad es constante estamos afirmando que no cambia ni su valor (también conodido como módulo, rapidez o celeridad) ni la dirección del movimiento.',
+  mrusolver: 'Solucionador de problemas',
+  mruresultto: 'El valor del instante inicial es: ',
+  mruresultt: 'El valor del tiempo transcurrido es: ',
+  mruresults: 'La posicion sera: ',
+  mruresultso: 'La posicion inicial ha sido: ',
+  mruresultvo: 'La velocidad sera de: ',
+  mruselectproblem: 'Seleccione el tipo de problema: ',
+  mrufindto: ' Conocemos S,So,Vo y t, buscamos to ',
+  mrufindt: ' Conocemos S,So,Vo y to, buscamos t ',
+  mrufindvo: ' Conocemos S,So,to y t, buscamos Vo ',
+  mrufindso: ' Conocemos S,Vo,to y t buscamos So ',
+  mrufinds: ' Conocemos So,Vo,to y t buscamos S ',
+  mruselectunits: 'Selecciona las unidades del problema: ',
+  mruunitms: ' Metros, segundos ',
+  mruunitkmh: ' Kilometros, horas ',
+  mruunitmph: ' Millas, horas',
+  mruclear: 'Limpiar datos',
+  mrucalc: 'Calcular',
+
+  
+  
+
+
+
 }

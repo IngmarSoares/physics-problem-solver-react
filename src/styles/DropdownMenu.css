@@ -1,7 +1,7 @@
 .dropdown {
   position: absolute;
   top:41px;
-  width: 300px;
+  width: min-content;
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
