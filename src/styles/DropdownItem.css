@@ -1,5 +1,6 @@
 .menu-item {
-  height: 50px;
+  height: max-content;
+  width: max-content;
   display: flex;
   align-items: center;
   border-radius: var(--border-radius);

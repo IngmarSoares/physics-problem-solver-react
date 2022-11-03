@@ -4,7 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import NavBar from './components/NavBar';
 import Page404 from './components/Page404';
-import User from './components/User';
+import Mru from './components/mru';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={ <Home/>} />
           <Route path='/home' element={ <Home/>} />
           <Route path='/about' element={ <About/> } />
-          <Route path='/user/:name' element={ <User />} />
+          <Route path='/cinematica/mru' element={ <Mru/> }  />
           <Route path='/*' element={ <Page404/> } />
 
         </Routes>

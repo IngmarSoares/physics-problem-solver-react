@@ -1,3 +1,10 @@
+.navbar.main-bar{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2mm;
+}
+
+
 
 .navbar {
   background-color: brown;
@@ -30,6 +37,9 @@
 a.nav-bar-menu.active {
   color: rgb(0, 0, 0);
 }
+a.nav-bar-menu.active:hover {
+  color: rgb(165, 182, 165);
+}
 
 .nav-bar-link {
   color: black;
@@ -42,8 +52,7 @@ a.nav-bar-menu.active {
 }
 
 .bandera {
-  height: 1.5rem;
-  margin-left: 0.5rem;
-  border: 2px solid black;
-  
+  height: 0.8rem;
+  margin-left: 0.3rem;
+  border: 2px solid rgb(230, 162, 162);
 }

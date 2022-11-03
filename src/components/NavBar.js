@@ -1,7 +1,8 @@
 import {NavLink} from 'react-router-dom'
 import '../styles/NavBar.css'
 import DropdownMenu from './DropdownMenu'
-import NavItem from './NavItem'
+import NavItemC from './NavItemC'
+import NavItemD from './NavItemD'
 import { langEN } from '../languaje/en';
 import { langES } from '../languaje/es';
 import flagES from '../images/ES.png'
@@ -28,23 +29,30 @@ let NavBar = () =>  {
     localStorage.setItem('lang','langEN')
     window.location.reload(false)
     }
+   
   
   return (
-    <nav className='navbar'>
-      <ul className='navbar-nav'>
-        
-        <li> <NavLink className='nav-bar-link' to="/home" > Home </NavLink> </li>
-        <li> <NavLink className='nav-bar-link' to="/about" > About </NavLink> </li>
-        <li> <NavLink className='nav-bar-link' to="/contact" > Contact </NavLink> </li>
-        <NavItem className='nav-bar-menu' text='Cinematica' old> 
-        <DropdownMenu campo='cinematica' options={[['mrua','Uniformly Accelerated Motion Calculator'],['mru','Uniformly Motion Calculator']]}/>
-        </NavItem>
+    <nav className='navbar main-bar'>
+        <div className='navbar'>  
+          <ul className='navbar-nav'>
 
-        
-        
-        <img onClick={changeLangEN} className='bandera' alt='bandera' src={flagEN} /> 
-        <img onClick={changeLangES} className='bandera' alt='bandera' src={flagES} />
-      </ul>
+            <li> <NavLink className='nav-bar-link' to="/home" > {lenguaje.navhome} </NavLink> </li>
+            <li> <NavLink className='nav-bar-link' to="/about" > {lenguaje.navabout} </NavLink> </li>
+            <li> <NavLink className='nav-bar-link' to="/contact" > {lenguaje.navcontact} </NavLink> </li>
+            <NavItemC className='nav-bar-menu' text={lenguaje.navkinematics}> 
+              <DropdownMenu campo='cinematica' options={[['mru',`${lenguaje.navMRU}`],['mrua',`${lenguaje.navMRUA}`]]}/>
+            </NavItemC>
+            <NavItemD  className='nav-bar-menu' text={lenguaje.navdynamics}> 
+              <DropdownMenu campo='dinamica' options={[['firstlaw',`${lenguaje.nav1stlaw}`],['secondlaw',`${lenguaje.nav2ndlaw}`],['thirdlaw',`${lenguaje.nav3rdlaw}`]]}/>
+            </NavItemD>
+
+            
+          </ul>
+        </div>
+        <div className='navbar'>
+          <img onClick={changeLangEN} className='bandera' alt='bandera' src={flagEN} /> 
+          <img onClick={changeLangES} className='bandera' alt='bandera' src={flagES} />
+        </div>
     </nav>
   )
 }
